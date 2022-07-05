@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolioStyles.css">
+    <title>My Portfolio</title>
+
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li class="dropdownIcon"> <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            <li> <a href="contacts.html">Contacts</a> </li>
+            <li> <a href="projects.html">Projects</a></li>
+            <li> <a href="skills.html">Skills</a></li>
+            <li> <a href="aboutme.html">About Me</a></li>
+            <li> <a href="portfolio.html">Home</a></li>
+            <!-- <li> <a href="#"> Sarthak Sharma</a></li> -->
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="infoContainer">
+            <div class="row">
+                <div class="col-6">
+                    <div class="devInfo">
+                        <h1 class="aboutme">About Me</h1>
+                        <p class="Para"> I am a 4th year undergraduate degree
+                            student currently pursuing Computer
+                            Science from SRMIST DELHI-NCR CAMPUS,
+                            Modinagar. Responsible and ambitious
+                            student with excellent time management
+                            skills. Seeking to apply my computer
+                            application abilities and project/event
+                            planning skills to job role at your company.
+                            Currently working on my coding skills and DSA.
+                            Possess proven communication skills and
+                            strong work ethic that will aid your
+                            company in meeting its milestones. A fun fact about me is that I really like to listen to
+                            music,
+                            dance and play cricket.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="devPic"> <img src="me2.jpg" alt="Sarthak Sharma"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                // change topnav to topnav.responsive
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

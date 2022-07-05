@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolioStyles.css">
+    <title>My Portfolio</title>
+
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li class="dropdownIcon"> <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            <li> <a href="contacts.html">Contacts</a> </li>
+            <li> <a href="projects.html">Projects</a></li>
+            <li> <a href="skills.html">Skills</a></li>
+            <li> <a href="aboutme.html">About Me</a></li>
+            <li> <a href="portfolio.html">Home</a></li>
+            <!-- <li> <a href="#"> Sarthak Sharma</a></li> -->
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="contactForm">
+            <h1>I would love to hear your thoughts!</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="clientEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="clientphone" class="form-label">Phone</label>
+                    <input type="phone" class="form-control" id="clientphone">
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="clientmessage" class="form-label">Message</label>
+                    <input type="text" class="form-control" id="messageforMe"> -->
+                    <label for="clientmessage" class="form-label">Message</label>
+                    <textarea name="Message" id="messageforMe" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+                <p class="myName">Sarthak Sharma</p>
+                <p class="myPlace">Lucknow, India <br>
+                    <a href="mailto:ssarthak0911@gmail.com">ssarthak0911@gmail.com</a>
+                </p>
+        </div>
+        </form>
+
+    </div>
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                // change topnav to topnav.responsive
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

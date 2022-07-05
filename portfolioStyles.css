@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&distplay=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Source+Code+Pro:wght@300;400&family=Ubuntu&family=Varela+Round&display=swap');
+
+
+/* ################# DEFAULTS ############### */
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+body {
+    line-height: 2;
+    margin: 0;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-6 {
+    width: 50%;
+}
+
+/* ############ NAV BAR ############## */
+
+
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    /* background-color: #000099; */
+    background-image: linear-gradient(to right, rgb(33, 33, 36), #161631);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: right;
+}
+
+ul.topnav li.topnav-left {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Arial, Helvetica, sans-serif";
+}
+
+ul.topnav li a:hover {
+    background-color: #171234;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+    float: left;
+}
+
+
+/* ################# MOBILE ###################### */
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(6)) {
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: left;
+    }
+
+    ul.topnav.responsive {
+        position: relative;
+    }
+
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    .col-6 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .devPic img {
+        margin: auto;
+        height: 45vh;
+        position: relative;
+    }
+
+    .devInfo {
+        width: 100%;
+        position: relative;
+    }
+
+    /* .picture {
+        display: flex;
+        margin: auto;
+    }
+
+    .info {
+        display: flex;
+        position: relative;
+        margin: auto;
+    } */
+
+}
+
+/* ##################### BODY ############################# */
+
+body {
+    /* background-image: linear-gradient(to right, blue, #3399ff); */
+    /* background-color: #242582; */
+    background-image: linear-gradient(to right, rgb(33, 33, 36), #161631);
+}
+
+.main {
+    /* display: flex; */
+    display: block;
+}
+
+/* ################# INTRO ##################### */
+
+.infoContainer {
+    /* background-color: #20203a; */
+    height: 60vh;
+    width: 90vw;
+    margin: 100px auto;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: inherit;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(226, 228, 195);
+    display: block;
+    flex-wrap: wrap;
+}
+
+.Personal {
+    width: 50%;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hello {
+    font-size: 50px;
+    font-family: 'Source Code Pro', monospace;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Arial, Helvetica, sans-serif";
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    font-size: 25px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.moreabout {
+    font-size: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    margin-top: 64px;
+    display: flex;
+}
+
+.buttons button {
+    padding: 10px;
+    border-radius: 13px;
+    /* color: inherit; */
+    /* background-color: floralwhite; */
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 30px;
+    cursor: pointer;
+    display: flex;
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttons button a:hover {
+    color: inherit;
+    background-color: rgb(146, 180, 238);
+}
+
+.buttons button:hover {
+    color: inherit;
+    background-color: rgb(146, 180, 238);
+}
+
+.devPic img {
+    height: 55vh;
+    /* margin-right: 5%; */
+    /* margin-left: 5%; */
+    padding: 10px;
+    margin: auto;
+    width: 90%;
+}
+
+/* .picture {
+    display: flex;
+    position: relative;
+    margin: auto;
+} */
+
+.info {
+    /* display: flex; */
+    /* position: relative; */
+    margin: auto;
+}
+
+/* ####################### ABOUT ME ####################### */
+
+.aboutme {
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(240, 228, 199);
+    display: block;
+}
+
+p {
+    font-size: 19px;
+    color: azure;
+    padding: 15px;
+    font-family: 'Gulzar', serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+/* ################# CONTACT FORM ######################## */
+
+.contactForm {
+    padding: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    font-size: 15px;
+    position: relative;
+}
+
+.contactForm h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: bisque;
+    text-align: center;
+    padding: 5px;
+}
+
+.contactForm form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm form div {
+    width: 16vw;
+    border-radius: 5px;
+    /* margin: 2px 600px; */
+    padding: 5px;
+    color: bisque;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+#messageforMe {
+    width: 240px;
+    height: 120px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.contactForm button {
+    margin: 2px 175px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    background-color: black;
+    color: bisque;
+}
+
+.myName {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: bisque;
+    font-size: 15px;
+}
+
+.myPlace {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: bisque;
+    font-size: 15px;
+}
+
+p a {
+    color: bisque;
+}
+
+p.myName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ################# SKILLS ##################### */
+
+
+.skillcontainer {
+    padding: 15px;
+}
+
+.skillcontainer h1 {
+    text-align: center;
+    color: beige;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.skillcontainer h2 {
+    text-align: center;
+    color: beige;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.skillcontainer img {
+    padding: 10px;
+    width: 120px;
+}
+
+.skillitem {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.skill {
+    width: 23px;
+    height: 23px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.hundred {
+    width: 250px;
+}
+
+.seventy-five {
+    width: 200px;
+}
+
+.fifty {
+    width: 125px;
+}
+
+.twenty-five {
+    width: 60px;
+}

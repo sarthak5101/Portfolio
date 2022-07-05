@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolioStyles.css">
+    <title>My Portfolio</title>
+
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li class="dropdownIcon"> <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            <li> <a href="contacts.html">Contact</a> </li>
+            <li> <a href="projects.html">Projects</a></li>
+            <li> <a href="skills.html">Skills</a></li>
+            <li> <a href="aboutme.html">About Me</a></li>
+            <li> <a href="portfolio.html">Home</a></li>
+            <!-- <li> <a href="#"> Sarthak Sharma</a></li> -->
+        </ul>
+    </nav>
+
+    <div class="main">
+
+        <div class="skillcontainer">
+            <h1>My Skills</h1>
+            <p> I am currentlyworking on my coding skills and Data Structures along with my development skills. <br>
+                The Skills represented here are out of 100
+            </p>
+            <!-- <p>The Skills represented here are out of 100.</p> -->
+            <div class="skillitem">HTML: <div class="skill hundred">
+                    <p>100</p>
+                </div>
+            </div>
+            <div class="skillitem">CSS: <div class="skill seventy-five">
+                    <p>75</p>
+                </div>
+            </div>
+            <div class="skillitem">Javascript: <div class="skill fifty">
+                    <p>50</p>
+                </div>
+            </div>
+            <div class="skillitem">C++: <div class="skill fifty">
+                    <p>50</p>
+                </div>
+            </div>
+            <h2>SKills and Tools:</h2>
+            <a href="#"><img
+                    src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="HTML5"> </a>
+            <a href="#"><img
+                    src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="CSS"></a>
+            <a href="#"><img
+                    src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                    alt="Javascript"></a>
+            <a href="#"><img
+                    src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+                    alt="C++"></a>
+            <a href="#"><img
+                    src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"
+                    alt="MySQL"></a>
+            <a href="#"> <img src="vsclogo.png" alt="VS Code"></a>
+            <a href="#"> <img src="pyclogo.png" alt="Pycharm"></a>
+            <a href="#"> <img src="windowslogo.png" alt="Windows"></a>
+        </div>
+    </div>
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                // change topnav to topnav.responsive
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
