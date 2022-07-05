@@ -399,7 +399,7 @@ p.myName {
 .skill {
     width: 23px;
     height: 23px;
-    background-color: yellow;
+    background-color: rgb(215, 215, 136);
     border: 2px solid black;
 }
 
